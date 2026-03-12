@@ -27,7 +27,7 @@ int main()
         }
 
     }
-    cout << "The Largest Element In The Array Is : "<< largest << endl;
-    cout << "The Smallest Element In The Array Is : "<< smallest << endl;
+    cout << "The Largest Element In The Array is : "<< largest << endl;
+    cout << "The Smallest Element In The Array is : "<< smallest << endl;
     return 0;
 }
