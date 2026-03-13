@@ -18,7 +18,9 @@ int main()
         if(arr[i]==find)
         {
             cout << "Element Found at index " << i;
+            return 0;
         }
     }
+    cout << "Element Not Found";
     return 0;
 }

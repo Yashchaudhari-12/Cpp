@@ -12,14 +12,14 @@ int main()
         cin >> arr[i];
     }
     int temp=arr[0];
-    int n=5;
+    int n=sizeof(arr)/sizeof(arr[0]);
 
     for(int i=1;i<5;i++)
     {
         if(arr[i]>=temp)
         {
             temp=arr[i];
-            count +=1;
+            count += 1;
         }
     }
     if(count==n-1)
