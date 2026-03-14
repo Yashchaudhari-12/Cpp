@@ -3,7 +3,7 @@ using namespace std;
 
 bool is_prime(int n)
 {
-    if (n <= 1)
+    if(n <= 1)
     {
         return false;
     }
@@ -16,19 +16,23 @@ bool is_prime(int n)
     }
     return true;
 }
-    int main()
-    {
-       int n;
-       cout << "Enter No To Check If It Is Prime Or Not : ";
-       cin >> n;
-       
-       if(is_prime(n))
-       {
-          cout << "Prime";
-       }
-       else
-       {
-          cout << "Not Prime";
-       }
-       return 0;
-    }
+
+int main()
+{
+  int a;
+
+  cout << "Enter A No : ";
+  cin >> a;
+
+  if(is_prime(a))
+  {
+    cout << "Prime";
+  }
+  else
+  {
+    cout << "Not Prime";
+  }
+  return 0;
+  
+}
+    
