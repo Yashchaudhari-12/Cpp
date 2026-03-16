@@ -8,5 +8,7 @@ Topics covered:
 - If-Else Problems
 - Arrays
 - Logical Problems
+- Functions
+- Pointer
 
 I practice coding daily and upload my progress here.
