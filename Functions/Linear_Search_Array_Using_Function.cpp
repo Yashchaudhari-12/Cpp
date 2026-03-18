@@ -1,43 +1,40 @@
 #include<iostream>
 using namespace std;
 
-int find_element(int arr[],int n,int find)
+int ls(int arr[],int n,int a)
 {
-    int found=0;
     for(int i=0;i<n;i++)
     {
-        if(arr[i]==find)
+        if(arr[i]==a)
         {
-            return i;
+            return i;        
         }
     }
     return -1;
 }
-
 int main()
 {
-    int n,find;
+    int n,a;
     cout << "Enter Array Size : ";
     cin >> n;
-
     cout << "Enter Array Elements : ";
     int arr[n];
+
     for(int i=0;i<n;i++)
     {
         cin >> arr[i];
     }
-    cout << "Enter Element You Want To Find : ";
-    cin >> find;
+    cout << "Enter Element You Want To Search : ";
+    cin >> a;
+    int found = ls(arr,n,a);
 
-    int found=find_element(arr,n,find);
     if(found==-1)
     {
-        cout << "Element Not Present In The Array";
+        cout << "Element Not In Array";
     }
     else
     {
-        cout << "The Element You Want To Find Is At Index No : " << found;
+        cout << "Element Present At Index No : " << found;
     }
-
     return 0;
 }
