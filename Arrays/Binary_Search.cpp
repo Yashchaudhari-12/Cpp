@@ -43,11 +43,11 @@ int main()
 
     if(elem==-1)
     {
-        cout << "Element Not Found ";
+        cout << "Element Not Found " << endl;
     }
     else 
     {
-        cout << "Element Present At Index No : " << elem;
+        cout << "Element Present At Index No : " << elem << endl;
     }
     return 0;
 }

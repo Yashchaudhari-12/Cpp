@@ -1,22 +1,28 @@
-#include<iostream>
+#include <iostream>
+#include <climits>
 using namespace std;
 
-int max_sum(int arr[],int n,int k)
+int max_sum(int arr[], int n, int k)
 {
-    int sum=0;
-    int max_sum=INT_MIN;
-    for(int i=0;i<k;i++)
+    int sum = 0;
+    int max_sum = INT_MIN;
+
+    for (int i = 0; i < k; ++i)
     {
         sum += arr[i];
     }
-    for(int i=k;i<n;i++)
+
+    max_sum = sum;
+
+    for (int i = k; i < n; ++i)
     {
-        sum = sum - arr[i-k] + arr[i];
-        if(sum>max_sum)
+        sum = sum - arr[i - k] + arr[i];
+        if (sum > max_sum)
         {
-          max_sum=sum;
+            max_sum = sum;
         }
-        }
+    }
+
     return max_sum;
 }
 int main()
@@ -37,6 +43,6 @@ int main()
 
     int max=max_sum(arr,n,k);
 
-    cout << "The Max Sum Is : " << max;
+    cout << "The Max Sum Is : " << max << endl;
     return 0;
 }

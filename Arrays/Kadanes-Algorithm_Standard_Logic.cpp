@@ -29,6 +29,6 @@ int main()
     }
     int max_sum= max_sum1(arr,n);
 
-    cout << "The Max Sum Of Subarray Is : " << max_sum;
+    cout << "The Max Sum Of Subarray Is : " << max_sum << endl;
     return 0;
 }
